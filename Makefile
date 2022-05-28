@@ -1,7 +1,10 @@
-.PHONY: all
+bip39-diceware.pdf: bip39-diceware.tex list-a.txt list-b.txt
+	latexmk -quiet -pdf bip39-diceware.tex
+	latexmk -c bip39-diceware.tex
 
-all:
-	bash ./genlist.sh
-	latexmk -quiet -pdf diceware.tex
-	latexmk -c diceware.tex
-	rm list-a.txt list-b.txt
+list-a.txt list-b.txt:
+	bash ./genlists.sh
+
+.PHONY: clean
+clean:
+	rm -f bip39-diceware.pdf list-a.txt list-b.txt

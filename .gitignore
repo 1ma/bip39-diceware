@@ -1,5 +1,2 @@
-*.gz
 *.pdf
-list-a.txt
-list-b.txt
-out/
+*.txt

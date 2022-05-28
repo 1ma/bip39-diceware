@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/
+set -euo pipefail
+
 echo -n "Enter desired mnemonic length (12|15|18|21|24): "
 read -r MNEMONIC_LENGTH
 
