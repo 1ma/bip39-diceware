@@ -19,15 +19,15 @@ On Ubuntu you can satisfy all these requirements by running `sudo apt install ma
 
 ## checksum.sh
 
-When used to generate a "real" mnemonic, this script should be run in an airgapped device with no internet connectivity whatsoever.
-If having a dedicated airgapped computer is too much a happy compromise is to boot a Linux OS from a Live USB.
+When used to generate a "real" mnemonic this script should be run in an airgapped device with no internet connectivity whatsoever.
+If having a dedicated airgapped computer is too much, a happy compromise is to boot a Linux OS from a Live USB.
 
 The script has been written in Bash and relies just on basic UNIX utilities to strive for maximum compatibility.
 
 ## Links of interest
 
 * The [BIP-39 specification] and the [English wordlist] that I used in my document.
-* [BIP-39 Test vectors] from the TREZOR project that helped me catch a bunch of bugs in my script.
+* [BIP-39 test vectors] from the TREZOR project that helped me catch a bunch of bugs in my script.
 * [Arman the Parman's DIY Private Key project] helped me better understand how the checksum calculation works.
 * As far as I can tell [Sarpulhu] came up with the method to perfectly map the Diceware procedure to a set of 2048 elements (Diceware usually uses lists of 7776 words).
 * [Ian Coleman's well known HTML tool] can be used to double-check the last word of a mnemonic if a hardware wallet is not available.
