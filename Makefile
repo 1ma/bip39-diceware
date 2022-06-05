@@ -3,7 +3,7 @@ bip39-diceware.pdf: bip39-diceware.tex list-a.txt list-b.txt
 	latexmk -c bip39-diceware.tex
 
 list-a.txt list-b.txt:
-	bash ./genlists.sh
+	bash ./aux/genlists.sh
 
 .PHONY: clean
 clean:

@@ -181,7 +181,6 @@ do
     exit 1
   fi
 
-
   NUMBER_BITS=$(printf "%011d" "$(echo "obase=2;${NUMBER}" | bc)")
   ENT_BITS="$ENT_BITS$NUMBER_BITS"
   COUNTER=$((COUNTER+1))

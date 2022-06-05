@@ -19,27 +19,21 @@
 \begin{enumerate}
 \item Decide the length of your BIP-39 seed. It can be either 12, 15, 18, 21 or 24 words long.
 \item To pick the first word, roll a dice. If you roll an even number (2, 4 or 6) use List A, otherwise use List B.
-Roll the dice 5 more times to choose a word from the selected list. If you get a 5 or a 6 simply roll again.
-Note the number next to the word as well as the word itself.
+Roll the dice 5 more times to choose a word from the selected list. If you get a 5 or a 6 simply roll the dice again.
 \item Repeat the previous step for each word until you get to N-1 words, e.g. if you wanted a 12 word seed pick only 11 words.
-\item Feed the sequence of numbers you got to the \emph{checksum.sh} script to calculate the last number.
-Then look up the number the script gives you on the lists to find the last word and complete your seed.
+\item Feed the sequence of words you got into the \emph{checksum.sh} script to calculate the last word.
 It is \emph{highly recommended} to run this script in an airgapped device (i.e. a machine with a clean OS with no internet connectivity).
 \end{enumerate}
 
 \section*{List A (0 to 1023)}
 \begin{multicols}{4}
-\begin{small}
 \verbatiminput{list-a.txt}
-\end{small}
 \end{multicols}
 
 \clearpage
 
 \section*{List B (1024 to 2047)}
 \begin{multicols}{4}
-\begin{small}
 \verbatiminput{list-b.txt}
-\end{small}
 \end{multicols}
 \end{document}
