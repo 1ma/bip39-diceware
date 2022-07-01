@@ -134,22 +134,6 @@ BIP39_LIST=(
   "wrap" "wreck" "wrestle" "wrist" "write" "wrong" "yard" "year" "yellow" "you" "young" "youth" "zebra" "zero" "zone" "zoo"
 )
 
-function word_index {
-  local I
-  local INDEX=-1
-
-  for I in "${!BIP39_LIST[@]}";
-  do
-    if [[ "${BIP39_LIST[$I]}" = "$1" ]];
-    then
-      INDEX=$I
-      break
-    fi
-  done
-
-  echo "$INDEX"
-}
-
 
 echo
 echo "WARNING: Don't run this script on an internet-enabled device unless you are just trying it out with fake data"
